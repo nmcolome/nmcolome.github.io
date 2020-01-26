@@ -270,3 +270,11 @@ footer {
 .email:hover {
   background-image: url(assets/hover-email.svg)
 }
+
+.resume {
+  background-image: url(assets/portfolio.svg)
+}
+
+.resume:hover {
+  background-image: url(assets/hover-portfolio.svg)
+}
