@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
   box-sizing: border-box;
   /* border: 1px solid black !important; */
@@ -16,13 +18,16 @@ header {
   flex-direction: column;
 }
 
+/* Navbar */
+
 nav {
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
+  background-color: #F5F5F5;
 }
 
 .nav-tab {
@@ -36,6 +41,8 @@ nav {
   font-weight: bold;
   color: #FF6663
 }
+
+/* Banner */
 
 .color-overlay {
   top: 0;
@@ -100,6 +107,30 @@ article h2 {
 article p {
   width: 70%;
   margin: 10px auto;
+  font-size: 18px;
+}
+
+.table {
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+}
+
+.table-column {
+  width: 50%;
+}
+
+.table-column h3 {
+  text-align: center;
+}
+
+.table-column p {
+  margin: auto;
+}
+
+.big-list {
+  display: flex;
+  justify-content: space-evenly;
   font-size: 18px;
 }
 
