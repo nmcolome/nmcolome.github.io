@@ -28,6 +28,7 @@ header {
   width: 100%;
   margin: 0 auto;
   background-color: #F5F5F5;
+  z-index: 1000;
 }
 
 .nav-tab {
@@ -141,7 +142,7 @@ section {
 }
 
 .table-column h3 {
-  text-align: center;
+  text-align: left;
 }
 
 .table-column p {
@@ -216,6 +217,10 @@ section {
   border-radius: 5px;
   padding: 0 5px;
   color: #ffffff;
+}
+
+.placeholder {
+  background-color: transparent;
 }
 
 /* Footer */
