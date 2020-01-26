@@ -6,7 +6,7 @@
     <script src="https://use.fontawesome.com/c72c34e2f9.js"></script>
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="banner">
         <div class="color-overlay"></div>
         <div class="heading">
@@ -17,15 +17,15 @@
           </div>
         </div>
       </div>
-      <nav>
-        <a class="nav-tab" href="#banner">Home</a>
+      <nav id="navbar">
+        <a class="nav-tab" href="#home">Home</a>
         <a class="nav-tab" href="#about">About</a>
-        <a class="nav-tab" href="#portfolio">Portfolio</a>
+        <a class="nav-tab" href="#projects">Portfolio</a>
         <a class="nav-tab" href="#social-media">Contact</a>
       </nav>
     </header>
-    <main>
-      <section class="about">
+    <main class="content">
+      <section class="about text" id="about">
         <h2 class="section-header">About me</h2>
         <p>Former industrial engineer turned software developer. I highly value finding challenges that push me to learn fast and adapt to new ways of approaching problems. The teams I work with report that my desire to find clean, efficient solutions, paired with my ability to stay positive under pressure have made our projects successful.</p>
         <p>While my current knowledge will enable me to hit the ground running and contribute to any team I join, I’m seeking the opportunity to learn from my peers and to continue growing as a professional. I have experience working in many multicultural teams and enjoy the opportunity to collaborate with others to produce exceptional work.</p>
@@ -60,15 +60,37 @@
           </div>
         </div>
       </section>
-      <section class="projects">
-        <div class="banner">
+      <section class="projects" id="projects">
+        <div class="other-banner">
           <div class="color-overlay"></div>
           <section class="portfolio">
             <h2 class="section-header white">Portfolio</h2>
             <div class="project-cards">
+              <!-- <div class="box">object 1</div>
+              <div class="box">object 2</div>
+              <div class="box">object 3</div>
+              <div class="box">object 4</div> -->
               <div class="project-card">
-                <div class="card-img"></div>
-                <div class="card-text"></div>
+                <img class="screenshot" src="images/fin_tool.png" alt="financial assessment tool image">
+                <div class="card-text white">
+                  <p>Tool designed to evaluate customer/product contribution, profitability, trends and investments based on financial key performance indicators (KPIs) and filtered based on category/ customers and location (if applicable).</p>
+                  <!-- <p>Features</p>
+                  <p><span>Profit And Loss Statement:</span> Review monthly results, trends & key financial indicators to identify a customer's performance, anomalies & risks/opportunities per client/ cluster.</p>
+                  <p><span>Dashboard:</span> Identify client clusters with a greater impact on the results by region (by Net Sales) & identify their growth.</p>
+                  <p><span>Top Customers:</span> Identify top 10 clients with the greatest impact (based on Net Sales) & evaluate the client's performance (Investment% vs Growth%).</p>
+                  <p>My Areas of Focus</p>
+                  <p>Build a RESTful API Backend with Rails.</p>
+                  <p>Build a Frontend with React and Recharts.</p>
+                  <p>Create useful, easy to understand data visuapzation that highpghts trends, easily compares financial KPIs to help make business decisions.</p>
+                  <p>Analyze varying datasets that contain large amounts of data, and manipulate them and return meaningful information.</p>
+                  <p>Build a standardized database from multiple CSV files to categorize and access the data they contain.</p> -->
+                </div>
+              </div>
+              <div class="project-card">
+                <img class="screenshot" src="images/fin_tool.png" alt="financial assessment tool image">
+                <div class="card-text white">
+                  <p>Tool designed to evaluate customer/product contribution, profitability, trends and investments based on financial key performance indicators (KPIs) and filtered based on category/ customers and location (if applicable).</p>
+                </div>
               </div>
             </div>
           </section>
@@ -84,5 +106,6 @@
         <a class='social-btn email' href="nmcolome@gmail.com"></a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

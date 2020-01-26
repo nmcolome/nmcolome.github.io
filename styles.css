@@ -20,7 +20,7 @@ header {
 
 /* Navbar */
 
-nav {
+#navbar {
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -40,6 +40,20 @@ nav {
 .nav-tab:hover {
   font-weight: bold;
   color: #FF6663
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* Banner */
@@ -109,7 +123,7 @@ section {
   margin: 15px 0 5px;
 }
 
-section p {
+.text p {
   width: 70%;
   margin: 10px auto;
   font-size: 18px;
@@ -140,36 +154,60 @@ section p {
   font-size: 18px;
 }
 
+/* Projects Section */
+
+.other-banner {
+  position: relative;
+  background: url(images/martin-sX4lxBWV0-A-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio {
   z-index: 2;
+  width: 80%;
 }
+
+/* Project Card */
+
+.project-cards {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: red;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.screenshot {
+  height: 50vh;
+  margin-right: 20px;
+}
+
+.card-text {
+  padding: 30px;
+}
+
+/* Footer */
 
 footer {
   height: 200px;
   background-color: #F5F5F5;
   padding-top: 50px;
-}
-
-.skills {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
-}
-
-.skills h1 {
-  margin: 0;
-  text-align: center;
-}
-
-.skills h3 {
-  margin: 0 0 1em 0;
-  font-weight: 400;
-  text-align: center;
-}
-
-.skills p {
-  width: 90%;
-  margin: 0 auto;
 }
 
 .social-media {
