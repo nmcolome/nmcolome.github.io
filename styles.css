@@ -59,6 +59,7 @@ nav {
   height: 92vh;
   background: url(images/martin-sX4lxBWV0-A-unsplash.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
 }
@@ -91,17 +92,21 @@ nav {
   font-size: 3.5vh;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0 5px;
-}
-
-section h2 {
+.section-header {
   margin: 10px 0 10px;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
+}
+
+.white {
+  color: #F5F5F5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 5px;
 }
 
 section p {
@@ -133,6 +138,10 @@ section p {
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
+}
+
+.portfolio {
+  z-index: 2;
 }
 
 footer {
