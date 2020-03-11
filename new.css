@@ -71,7 +71,7 @@ body {
 
 /* Navbar */
 
-#navbar {
+.navbar {
   padding-top: 6px;
   padding-bottom: 6px;
   display: flex;
@@ -80,7 +80,7 @@ body {
   z-index: 1000;
 }
 
-#navbar.big-nav {
+.big-nav {
   display: none;
 }
 
@@ -260,11 +260,11 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  #navbar.small-nav {
+  .small-nav {
     display: none;
   }
 
-  #navbar.big-nav {
+  .big-nav {
     display: flex;
   }
 
@@ -291,7 +291,7 @@ footer {
 
   .col-other {width: 49%;}
 
-  #navbar.big-nav {
+  .big-nav {
     padding: 0.6em 10em;
   }
 
@@ -321,7 +321,7 @@ footer {
     height: 300px;
   }
 
-  #navbar.big-nav {
+    .big-nav {
     padding: 0.6em 13em;
   }
 
