@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+/* Header */
+
+.banner {
+  position: relative;
+  height: 90vh;
+  background: url(images/martin-sX4lxBWV0-A-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.color-overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.myphoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: url(images/me.jpeg) no-repeat center;
+  background-size: cover;
+  margin: 0.6em 0;
+}
+
+.heading {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: #F5F5F5;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.logo {
+  margin: 0.3em 0;
+  font-size: 9vw;
+}
+
+.heading h2 {
+  margin: 0;
+  font-size: 6vw;
+}
+
+/* Navbar */
+
+#navbar {
+  padding: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F2F2F2;
+  z-index: 1000;
+}
+
+.nav-tab {
+  text-decoration: none;
+  color: #212121;
+  font-size: 5vw;
+}
+
+.nav-tab:hover {
+  font-weight: bold;
+  color: #FF6663
+}
+
+/* About Section */
+
+section {
+  padding: 0 1.67em;
+}
+
+.section-header {
+  text-align: center;
+}
+
+/* Best At/Looking For Section */
+
+.table {
+  background-color: #F5F5F5;
+  padding-bottom: 1em;
+}
+
+.column {
+  margin: 0;
+}
+
+.col-6 h4 {
+  margin: 0;
+  padding: 1.33em 0;
+}
+
+.looking_for p{
+  margin: 0.15em;
+  padding-left: 22px;
+}
+
+
+
+
