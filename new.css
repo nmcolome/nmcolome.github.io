@@ -2,32 +2,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  font-family: 'Avenir Next', sans-serif;
 }
 
 [class*="col-"] {
   width: 100%;
 }
 
-/* .col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
-
 /* Header */
 
 .banner {
   position: relative;
-  height: 90vh;
+  height: 92vh;
   background: url(images/martin-sX4lxBWV0-A-unsplash.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -55,8 +47,8 @@ body {
 }
 
 .myphoto {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: url(images/me.jpeg) no-repeat center;
   background-size: cover;
@@ -69,28 +61,33 @@ body {
 
 .logo {
   margin: 0.3em 0;
-  font-size: 9vw;
+  font-size: 2.5em;
 }
 
 .heading h2 {
   margin: 0;
-  font-size: 6vw;
+  font-size: 1.7em;
 }
 
 /* Navbar */
 
 #navbar {
-  padding: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   display: flex;
   justify-content: space-evenly;
   background-color: #F2F2F2;
   z-index: 1000;
 }
 
+#navbar.big-nav {
+  display: none;
+}
+
 .nav-tab {
   text-decoration: none;
   color: #212121;
-  font-size: 5vw;
+  font-size: 1.17em;
 }
 
 .nav-tab:hover {
@@ -105,20 +102,26 @@ body {
 
 /* About Section */
 
-section {
-  padding: 0 1.67em;
+nav, section, footer {
+  padding: 2em 3em;
 }
 
 .section-header {
   text-align: center;
   margin: 0;
-  padding: 0.83em 0;
+  padding-bottom: 0.83em;
+  font-weight: 400;
+}
+
+#about p {
+  text-align: justify;
 }
 
 /* Best At/Looking For Section */
 
 .table {
   padding-bottom: 1em;
+  padding-top: 0;
 }
 
 .column {
@@ -178,6 +181,10 @@ section {
 
 .card-link:hover {
   color: #FF6663;
+}
+
+.tag-list {
+  width: 100%;
 }
 
 .tag {
@@ -250,4 +257,87 @@ footer {
 
 .resume:hover {
   background-image: url(assets/hover-document.svg)
+}
+
+@media only screen and (min-width: 768px) {
+  #navbar.small-nav {
+    display: none;
+  }
+
+  #navbar.big-nav {
+    display: flex;
+  }
+
+  nav, section, footer {
+    padding: 2em 7em;
+  }
+
+  .table, .list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav, section, footer {
+    padding: 2em 9em;
+  }
+
+  .col-other {width: 49%;}
+
+  #navbar.big-nav {
+    padding: 0.6em 10em;
+  }
+
+  .social-media {
+    padding: 0 10em;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .col-other {width: 49%;}
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .myphoto {
+    width: 300px;
+    height: 300px;
+  }
+
+  #navbar.big-nav {
+    padding: 0.6em 13em;
+  }
+
+  .table, #about p {
+    font-size: 1.25vw;
+  }
+
+  .section-header {
+    font-size: 2vw;
+  }
+
+  nav, section, footer {
+    padding: 2em 10em;
+  }
+
+  .social-media {
+    padding: 0 13em;
+  }
 }
