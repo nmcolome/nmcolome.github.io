@@ -16,7 +16,7 @@
       </div>
     </header>
     <nav id="navbar" class="col-12">
-      <a class="nav-tab" href="#projects">Portfolio</a>
+      <a class="nav-tab" href="#portfolio">Portfolio</a>
       <a class="nav-tab" href="https://medium.com/@nmcolome" target="_blank">Blog</a>
       <a class="nav-tab" href="https://drive.google.com/file/d/1OiESOjxtLsMdtcNkFcR2NmZcFw3Hzyp2/view?usp=sharing" target="_blank">Resume</a>
     </nav>
@@ -59,9 +59,83 @@
         <p>Challenging and meaningful work</p>
       </div>
     </section>
-    <section class="row">
+    <section id="portfolio" class="row banner col-12">
+      <div class="color-overlay"></div>
+      <div class="projects-container">
+        <h2 class="section-header">Portfolio</h2>
 
+        <div class="project-card col-4">
+          <img class="screenshot" src="images/fin_tool.png" alt="financial assessment tool image">
+          <div class="card-text">
+            <p class="card-title">Finance Assessment Tool</p>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/nmcolome/fin_assessment_tool" target="_blank">View App on Github</a><span> • </span>
+              <a class="card-link" href="https://github.com/nmcolome/fin_assessment_tool_api" target="_blank">View API on Github</a><span> • </span>
+              <a class="card-link" href="http://lit-ocean-37307.herokuapp.com/" target="_blank">View Live</a><span> • </span>
+              <a class="card-link" href="http://warm-beyond-47329.herokuapp.com/" target="_blank">View API</a>
+            </div>
+            <p class="card-description">Tool designed to evaluate customer/product contribution, profitability, trends and investments based on financial key performance indicators (KPIs) and filtered based on category/ customers and location (if applicable).</p>
+            <div>
+              <span class="tag">Rails</span><span class="tag">PostgreSQL</span><span class="tag">RSpec</span><span class="tag">React</span><span class="tag">Recharts</span>
+            </div>
+            <!-- <p>Features</p>
+            <p><span>Profit And Loss Statement:</span> Review monthly results, trends & key financial indicators to identify a customer's performance, anomalies & risks/opportunities per client/ cluster.</p>
+            <p><span>Dashboard:</span> Identify client clusters with a greater impact on the results by region (by Net Sales) & identify their growth.</p>
+            <p><span>Top Customers:</span> Identify top 10 clients with the greatest impact (based on Net Sales) & evaluate the client's performance (Investment% vs Growth%).</p>
+            <p>My Areas of Focus</p>
+            <p>Build a RESTful API Backend with Rails.</p>
+            <p>Build a Frontend with React and Recharts.</p>
+            <p>Create useful, easy to understand data visuapzation that highpghts trends, easily compares financial KPIs to help make business decisions.</p>
+            <p>Analyze varying datasets that contain large amounts of data, and manipulate them and return meaningful information.</p>
+            <p>Build a standardized database from multiple CSV files to categorize and access the data they contain.</p> -->
+          </div>
+        </div>
+
+        <div class="project-card col-4">
+          <img class="screenshot" src="images/cloney_island.png" alt="cloney island app image">
+          <div class="card-text">
+            <p class="card-title">Cloney Island</p>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/nmcolome/cloney-island" target="_blank">View App on Github</a><span> • </span>
+              <a class="card-link" href="https://stark-waters-79297.herokuapp.com/" target="_blank">View Live</a>
+            </div>
+            <p class="card-description">This travel app is a remake of Sygic Travel. It is designed to allow users to make day-to-day itineraries for their vacations, find detailed information about a city’s attractions, and locate those attractions on a map.</p>
+            <div>
+              <span class="tag">Rails</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">Google Maps Platform</span><span class="tag">Twilio API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" col-4>
+          <img class="screenshot" src="images/quantify_self.png" alt="quantify self app image">
+          <div class="card-text">
+            <p class="card-title">Quantify Self</p>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/nmcolome/quantified-self" target="_blank">View App on Github</a><span> • </span>
+              <a class="card-link" href="https://github.com/nmcolome/quantified-self-api" target="_blank">View API on Github</a><span> • </span>
+              <a class="card-link" href="https://squeemishly.github.io/" target="_blank">View Live</a><span> • </span>
+              <a class="card-link" href="http://qs-api-nc-sl.herokuapp.com/" target="_blank">View API</a>
+            </div>
+            <p class="card-description">This app's intent is to give users a space to see how many calories they have consumed in a day and compare how the calories consumed match their goals! Text turns red if they eat too much!</p>
+            <div>
+              <span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Knex</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card col-4 placeholder"></div>
+      </div>
     </section>
-    <footer></footer>
+    <footer>
+      <h2 class="section-header contact-footer">Contact</h2>
+      <div id="social-media" class="social-media">
+        <a class='social-btn twitter' href="https://twitter.com/NataliaMColome"></a>
+        <a class='social-btn github' href="https://github.com/nmcolome"></a>
+        <a class='social-btn linkedin' href="https://www.linkedin.com/in/nataliacolome/"></a>
+        <a class='social-btn email' href="nmcolome@gmail.com"></a>
+        <a class='social-btn resume' href="https://drive.google.com/file/d/1OiESOjxtLsMdtcNkFcR2NmZcFw3Hzyp2/view?usp=sharing" target="_blank"></a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>

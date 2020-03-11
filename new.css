@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -44,15 +43,6 @@ body {
   z-index: 0;
 }
 
-.myphoto {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: url(images/me.jpeg) no-repeat center;
-  background-size: cover;
-  margin: 0.6em 0;
-}
-
 .heading {
   position: relative;
   height: 100%;
@@ -62,6 +52,15 @@ body {
   justify-content: center;
   z-index: 2;
   color: #F5F5F5;
+}
+
+.myphoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: url(images/me.jpeg) no-repeat center;
+  background-size: cover;
+  margin: 0.6em 0;
 }
 
 .regular {
@@ -99,6 +98,11 @@ body {
   color: #FF6663
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 /* About Section */
 
 section {
@@ -107,12 +111,13 @@ section {
 
 .section-header {
   text-align: center;
+  margin: 0;
+  padding: 0.83em 0;
 }
 
 /* Best At/Looking For Section */
 
 .table {
-  background-color: #F5F5F5;
   padding-bottom: 1em;
 }
 
@@ -130,6 +135,119 @@ section {
   padding-left: 22px;
 }
 
+/* Portfolio Section */
 
+#portfolio {
+  height: 100%;
+  padding-bottom: 1rem;
+}
 
+.projects-container {
+  position: relative;
+  height: 100%;
+  color: #F5F5F5;
+}
 
+/* Project Cards Section */
+
+.project-card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #F5F5F5;
+  margin-bottom: 1rem;
+}
+
+.screenshot {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.card-text {
+  padding: 0 1.33em 1.33em;
+  color: #212121;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #7395FF;
+}
+
+.card-link:hover {
+  color: #FF6663;
+}
+
+.tag {
+  background-color: #7395FF;
+  border-radius: 5px;
+  padding: 0 5px;
+  color: #ffffff;
+}
+
+.placeholder {
+  background-color: transparent;
+}
+
+/* Footer */
+
+footer {
+  background-color: #F5F5F5;
+}
+
+.social-media {
+  text-align: center;
+  padding-bottom: 1.67em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.twitter {
+  background-image: url(assets/twitter.svg)
+}
+
+.twitter:hover {
+  background-image: url(assets/hover-twitter.svg)
+}
+
+.github {
+  background-image: url(assets/github.svg)
+}
+
+.github:hover {
+  background-image: url(assets/hover-github.svg)
+}
+
+.linkedin {
+  background-image: url(assets/linkedin.svg)
+}
+
+.linkedin:hover {
+  background-image: url(assets/hover-linkedin.svg)
+}
+
+.email {
+  background-image: url(assets/email.svg)
+}
+
+.email:hover {
+  background-image: url(assets/hover-email.svg)
+}
+
+.resume {
+  background-image: url(assets/document.svg)
+}
+
+.resume:hover {
+  background-image: url(assets/hover-document.svg)
+}
